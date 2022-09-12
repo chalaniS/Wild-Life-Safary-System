@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    body{
+      zoom: 80%;
+      overflow-x: hidden;
+    }
+}
+
+body{
+    background-image: url("../images/res-det-back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+/* main card formatings */
+.container-main{
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.res-det-form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 650px;
+    width: 1100px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-bottom: 200px;
+}
+
+/* source column formatings */
+.res-det-source{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 60px;
+    height: 700px;
+    width: 500px;
+    overflow-y: scroll;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-bottom: 200px;
+}
+
+.res-det-source::-webkit-scrollbar{
+    margin-left: 5px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th{
+    font-size: 23px;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+td{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.form-head{
+    height: 70px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 20px;
+    text-transform: capitalize;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.source-head{
+    height: 70px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 20px;
+    text-transform: capitalize;
+    font-size: 45px;
+    font-weight: 800;
+    margin-left: 30px;
+}
+
+.det-row{
+    margin-top: 20px;
+    width: 98%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#det-btn-container{
+    margin-top: 50px;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.card-inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.label{
+    height: 70px;
+    width: auto;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+    text-transform: capitalize;
+}
+
+.answer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0,.8);
+    padding-left: 10px;
+    font-weight: 1000;
+}
+.salutation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0,.8);
+    padding-left: 10px;
+}
+
+
+#salute{
+    width: 120px;
+
+}
+
+#email{
+    width: 500px;
+}
+
+/* buttons styling */
+.res-btns{
+    width: 150px;
+    padding: 0 10px;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 10px;
+    transition: .4s all;
+}
+
+#approve-btn{
+    background-color: #2ecc71;
+}
+
+#approve-btn:hover{
+    background-color: #27ae60;
+    cursor: pointer;
+}
+
+#cancel-btn{
+    background-color: #e74c3c;
+}
+
+#cancel-btn:hover{
+    background-color: #c0392b;
+    cursor: pointer;
+}
+#submit-btn{
+    width: 354px;
+    padding: 0 10px;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 10px;
+    transition: .4s all;
+    background-color: #27ae60;
+    cursor: pointer;
+}

@@ -1,0 +1,347 @@
+/* Make sure to have an active internet connection because
+some fonts are imported from google fonts */
+
+/* @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Pacifico&family=Poppins:wght@400;600&display=swap'); */
+/* font-family: 'Pacifico', cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    body{
+      zoom: 80%;
+    }
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/* formatings for header */
+
+/* Slideshow container */
+.slideshow-container {
+    top: 100px;
+    width: 800px;
+    border-radius: 30px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -50px;
+    padding: 16px;
+    color: rgba(0,0,0,0.8);
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    border-radius: 15px;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: -55px;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    left: -55px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 15px;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+
+  .beacons{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px;
+  }
+
+  .dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover{
+    background-color: #717171;
+    transform: scale(1.1);
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* Package Cards sector */
+
+  .package-sector{
+    position: relative;
+    top: 100px;
+    display: flex;
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pack-intro{
+    padding: 20px 0;
+    height: auto;
+    width: 100%;
+  }
+
+  .pack-intro p{
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #353834;
+  }
+
+  .pack-intro p #highlight{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background: #f1c40f;
+    padding: 0 10px;
+  }
+
+  .package-grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 200px;
+    /* margin: auto; */
+  }
+
+  .pack{
+    height: 450px;
+    width: 320px;
+    padding: 5px;
+    background-color: whitesmoke;
+    margin: 20px 20px 10px 0;
+    box-shadow: 5px 5px 9px rgba(0,0,0,0.8);
+    overflow: hidden;
+  }
+
+  .pack .pic-polygon{
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0%, 100% 74%, 0 96%); /*custom made polygon do not change*/
+    transition: .5s all ease-in-out;
+  }
+
+  .pack .pic-polygon::before{
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(12, 12, 12);
+    opacity: .8;
+    clip-path: polygon(0 0, 100% 0%, 100% 74%, 0 96%); 
+    transition: 1s all ease;
+    transform: translateX(-100%);
+    z-index: 3;
+  }
+  /* clip-path: polygon(0 0, 100% 0%, 100% 51%, 0 90%);  This is custom made polygon code for emergency use*/
+
+  .pack:hover .pic-polygon::before{
+    transform: translateX(0);
+  }
+
+  .pack:hover .pic-polygon{
+    cursor: pointer;
+  }
+
+  .pack .night-count{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    height: 70px;
+    background-color: #f1c40f;
+    text-align: center;
+  }
+
+  .pack .night-count .count{
+    font-size: 36px;
+  }
+
+  .pack .night-count .days{
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: -10px;
+  }
+  
+  .pack .price{
+    left: 150px;
+    width: 150px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: -50px;
+    font-size: 20px;
+    padding: 5px 0;
+  }
+
+  .pack .trip-det .l1{
+    position: relative;
+    top: -40px;
+    font-size: 18px;
+    color: #353834;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .pack .trip-det .l2{
+    position: relative;
+    color: #218c74;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    top: -30px;
+  }
+
+  .pack .trip-det .l3{
+    position: relative;
+    top: -20px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  #p1 > .pic-polygon{
+    background-image: url("../images/pack-8.jpg");
+    background-size: cover;
+  }
+
+  #p2 > .pic-polygon{
+    background-image: url("../images/pack-9.jpg");
+    background-size: cover;
+  }
+
+  #p3 > .pic-polygon{
+    background-image: url("../images/pack-10.jpg");
+    background-size: cover;
+  }
+
+  #p4 > .pic-polygon{
+    background-image: url("../images/pack-7.jpg");
+    background-size: cover;
+  }
+
+  #p5 > .pic-polygon{
+    background-image: url("../images/pack-4.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #p6 > .pic-polygon{
+    background-image: url("../images/pack-5.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #p7 > .pic-polygon{
+    background-image: url("../images/pack-3.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #p8 > .pic-polygon{
+    background-image: url("../images/pack-11.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  #p9 > .pic-polygon{
+    background-image: url("../images/pack-12.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #p10 > .pic-polygon{
+    background-image: url("../images/pack-13.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #p11 > .pic-polygon{
+    background-image: url("../images/pack-14.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  

@@ -1,0 +1,60 @@
+
+
+body{
+    
+    background-image: url(../images/res-det-back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+#title{
+  
+    text-align: center;
+    padding-top: 70px;
+    color: #FFD700;
+    font-size: 40px;
+}
+
+#menu{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+table {
+    margin-top: 100px;
+    border: none;
+    background-color: antiquewhite;
+    font-size: 20px;
+    box-shadow: 7px 7px 9px rgba(29, 27, 27, 0.8);
+    float: center;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+th{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px black;
+    color: aliceblue;
+    font-family:'Courier New', Courier, monospace;
+    padding:10px 30px 10px 30px;
+
+}
+
+tr:nth-child(odd) {
+    background: lightseagreen;
+}
+
+td{
+    padding: 10px;
+}
+.salutation{
+    width: 10px;
+}
+.body{
+    width: 100%;
+}

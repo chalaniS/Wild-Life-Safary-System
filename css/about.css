@@ -1,0 +1,123 @@
+.aboutus{
+    margin-top: 100px;
+}
+
+.wild{
+    font-size: larger;
+    color: black;
+    font-weight: 500;
+
+}
+.info{
+  font-size: large;
+  color: purple;
+  font-weight: 700;
+}
+h2{
+  font-weight: 800;
+  color: #04AA6D;
+}
+button{
+    position: relative;
+}
+.wild1{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    color: crimson;
+}
+.head{
+    text-align: center;
+    font-style: inherit;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(51, 50, 50);
+}
+body {
+  margin-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#btn{
+  background-color: none;
+   font-size: 20px;
+}
+
+#btn:hover{
+  background-color: none;
+  
+}
+
+.topnav {
+  background-color: #04AA6D;
+  font-weight: 500;
+  color: blue;
+  margin-left: 400px;
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: center;
+  background-color: #04AA6D;
+  color: white;
+}
+.fon{
+    
+    font-size:xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(70, 70, 80);
+    text-align: center;
+}
+.tc{
+  color: grey;
+}
+a:visited{
+    color: grey;
+}
+
+
+.sub{
+    font-size: larger;
+    font-style: oblique;
+	color:black;
+}
+.img{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background{
+	background-color: #fbffa1;
+   
+}
+
+.bg{
+	background-color:#fbffa1;
+}
+.tcbutton{
+  background-color: yellowgreen;
+}
+.tcbutton:hover{
+      color: white;
+      cursor: pointer;
+}
+.imgtc{
+  display: block;
+  object-fit: contain;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}

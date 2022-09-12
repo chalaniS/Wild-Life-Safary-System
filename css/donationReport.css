@@ -1,0 +1,49 @@
+.body{
+    position: relative;
+    top: 100px;
+    margin-bottom: 100px;
+}
+
+body{
+    background-image: url("../images/ReportBackground.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+
+}
+
+#topic1{
+    text-align: center;
+    text-decoration-line:underline;
+}
+
+#table{
+    padding: 5px 5px 5px 5px;
+    background-color:powderblue;
+}
+
+#row1{
+    background-color:mediumturquoise;
+}
+
+tr{
+    background-color: aliceblue;
+}
+
+th{
+    padding: 5px 20px 5px 20px;
+}
+td{
+    padding: 5px 20px 5px 20px;
+}
+
+#savBtn{
+    font-size: 20px;
+}
+
+#savBtn:hover{
+    background-color:darkslategrey;
+    color: whitesmoke;
+
+}

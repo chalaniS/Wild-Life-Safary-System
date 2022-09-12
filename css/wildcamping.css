@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    body{
+      zoom: 80%;
+    }
+}
+body{
+    background-image: url('../images/wild\ camping\ back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.pack{
+    height: 750px;
+    width: 320px;
+    padding: 5px;
+    background-color: whitesmoke;
+    margin: 20px 20px 10px 0;
+    box-shadow: 5px 5px 9px rgba(0,0,0,0.8);
+    overflow: hidden;
+  }
+
+  .card-container{
+      position: relative;
+      top: 200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      height: 1800px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-bottom: 200px;
+  }
+
+
+
+  .pack .pic-polygon{
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0%, 100% 74%, 0 96%); /*custom made polygon do not change*/
+    transition: .5s all ease-in-out;
+  }
+
+  .pack .pic-polygon::before{
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(12, 12, 12);
+    opacity: .8;
+    clip-path: polygon(0 0, 100% 0%, 100% 74%, 0 96%); 
+    transition: 1s all ease;
+    transform: translateX(-100%);
+    z-index: 3;
+  }
+  /* clip-path: polygon(0 0, 100% 0%, 100% 51%, 0 90%);  This is custom made polygon code for emergency use*/
+
+  .pack:hover .pic-polygon::before{
+    transform: translateX(0);
+  }
+
+  .pack:hover .pic-polygon{
+    cursor: pointer;
+  }
+
+  .pack .night-count{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    height: 70px;
+    background-color: #f1c40f;
+    text-align: center;
+  }
+
+  .pack .night-count .count{
+    font-size: 36px;
+  }
+
+  .pack .night-count .days{
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: -10px;
+  }
+  
+  .pack .price{
+    left: 150px;
+    width: 150px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: -50px;
+    font-size: 20px;
+    padding: 5px 0;
+  }
+
+  .pack .trip-det .l1{
+    position: relative;
+    top: -40px;
+    font-size: 18px;
+    color: #353834;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .pack .trip-det .l2{
+    position: relative;
+    color: #218c74;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    top: -30px;
+  }
+
+  .pack .trip-det .l3{
+    position: relative;
+    top: -20px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .pack .descrip{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+  }
+
+  .pack .descrip .l4{
+    position: relative;
+    top: -20px;
+    text-align: center;
+    text-justify: inter-word;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+.read-more-btn{
+  height: 50px;
+  width: 250px;
+  background-color: #353834;
+  border: 3px solid yellow;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+  #p1 > .pic-polygon{
+    background-image: url("../images/p1-1.jpg");
+    background-size: cover;
+  }
+
+  #p2 > .pic-polygon{
+    background-image: url("../images/pack-9.jpg");
+    background-size: cover;
+  }
+
+  #p3 > .pic-polygon{
+    background-image: url("../images/pack-10.jpg");
+    background-size: cover;
+  }
+
+  #p4 > .pic-polygon{
+    background-image: url("../images/pack-7.jpg");
+    background-size: cover;
+  }
+
+  #p5 > .pic-polygon{
+    background-image: url("../images/pack-4.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #p6 > .pic-polygon{
+    background-image: url("../images/pack-5.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #p7 > .pic-polygon{
+    background-image: url("../images/pack-3.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #p8 > .pic-polygon{
+    background-image: url("../images/pack-11.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  #p9 > .pic-polygon{
+    background-image: url("../images/pack-12.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #p10 > .pic-polygon{
+    background-image: url("../images/pack-13.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #p11 > .pic-polygon{
+    background-image: url("../images/pack-14.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  a:visted , a:hover , a:active{
+    color:unset; 
+    font-family: unset; 
+    font-size:unset; 
+    
+  } 

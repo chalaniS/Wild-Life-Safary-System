@@ -1,0 +1,112 @@
+
+
+body{
+    background-image: url("../images/donation/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.bodypart{
+    position: relative;
+    top: 100px;
+    margin-bottom: 200px;
+}
+
+#topic1{
+    font-size: 65px;
+    color: rgb(58, 57, 55);
+}
+#topic2{
+    color: rgb(224, 224, 247);
+    font-size: 30px;
+}
+
+#pMonth{
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+
+#pMonth a{
+    text-decoration: none;  
+    color: aliceblue;
+    font-weight: 700;
+    font-size:large;
+}
+
+#amount{
+    color: rgb(211, 208, 208);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#btn{
+    padding: 3px 10px 3px 10px;
+    width: 100px;
+    font-size: 25px;
+    margin-left: 75px;
+    background-color: rgb(201, 200, 191);
+    border: rgb(201, 200, 191);
+}
+
+::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+#btn:hover{  
+    background:rgb(245, 160, 4);
+
+}
+
+#btn:focus{
+    color:aliceblue;
+    background:rgb(245, 160, 4);
+
+}
+
+.donForm{    
+    margin: auto;
+    text-align: center;
+}
+
+
+#donorinfor { 
+    background-color: rgb(255, 246, 246, 0.7);
+    width: 400px;
+    padding: 10px 50px 20px 80px;
+    margin: 50px 100px 50px 100px ;  
+    margin-left: 20%; 
+}
+
+#donorinfor input {
+    margin: 0 0 0 10px;
+}
+
+aside{
+    float: right;
+    width: 400px;
+    padding: 10px 50px 20px 50px;
+    margin: 50px 100px 50px 150px ;
+    background-color: rgb(255, 246, 246, 0.7);
+    margin-right: 20%;
+    
+}
+
+#cardicon{
+    width:100px;
+    height: auto;
+}
+
+#subBtn, #resBtn{
+    background-color: rgb(245, 212, 170);
+    width: 70px;
+    height: 30px;
+}
+
+#subBtn:hover, #resBtn:hover{
+    background-color: rgb(172, 165, 165) ;
+}
+
